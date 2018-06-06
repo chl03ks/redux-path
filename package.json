@@ -1,0 +1,15 @@
+{
+  "name": "learning-redux",
+  "version": "1.0.0",
+  "description": "Learning redux",
+  "main": "index.js",
+  "dependencies": {
+    "expect": "^23.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "MIT"
+}
