@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
 import Counter from './componets/Counter';
 import CounterReducer from './componets/CounterReducer';
 
-const store = createStore(CounterReducer);
+const appReducer = combineReducers({
+  CounterReducer,
+});
+
+const store = createStore(appReducer);
 
 const render = () => {
   ReactDOM.render(
